@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anesthesia Resources</title>
+    <style>
+        :root {
+            --primary-color: #2a52be;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --card-bg: #ffffff;
+            --hover-color: #1e3a8a;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        .resources-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .resource-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        .youtube .card-header {
+            background-color: #c4302b;
+        }
+
+        .document .card-header {
+            background-color: #217346;
+        }
+
+        .website .card-header {
+            background-color: #0077b5;
+        }
+
+        .featured .card-header {
+            background-color: #9c27b0;
+        }
+
+        .card-body {
+            padding: 15px;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .card-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        .card-link:hover {
+            background-color: var(--hover-color);
+        }
+
+        .featured {
+            grid-column: 1 / -1;
+            background-color: #fdf7ff;
+            border: 2px solid #9c27b0;
+            margin-top: 20px;
+        }
+
+        .featured .card-body {
+            height: auto;
+            padding: 20px;
+        }
+
+        .featured .card-title {
+            font-size: 1.2em;
+            color: #9c27b0;
+        }
+
+        .featured .card-description {
+            margin: 10px 0;
+        }
+
+        .featured .card-link {
+            background-color: #9c27b0;
+            margin-top: 15px;
+        }
+
+        .featured .card-link:hover {
+            background-color: #7b1fa2;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+
+        @media (max-width: 768px) {
+            .resources-container {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Anesthesia Machine Educational Resources</h1>
+
+    <div class="resources-container">
+        
+        <div class="resource-card youtube">
+            <div class="card-header">YouTube Video</div>
+            <div class="card-body">
+                <div class="card-title">Anesthesia Machine: Dr. Yasser Qadah</div>
+                <a href="https://www.youtube.com/watch?v=4BEWLA44CS4" class="card-link" target="_blank">Watch Video</a>
+            </div>
+        </div>
+
+        <div class="resource-card document">
+            <div class="card-header">PDF Document</div>
+            <div class="card-body">
+                <div class="card-title">KAU Anesthesia Lecture Notes</div>
+                <a href="https://www.k-space.org/Class_Info/EE497/KAU_Anesthesia_lec.pdf" class="card-link"
+                    target="_blank">View PDF</a>
+            </div>
+        </div>
+
+        <div class="resource-card website">
+            <div class="card-header">Educational Website</div>
+            <div class="card-body">
+                <div class="card-title">Circle Breathing System Explained</div>
+                <a href="https://www.howequipmentworks.com/circle_breathing_system/" class="card-link"
+                    target="_blank">Visit Website</a>
+            </div>
+        </div>
+
+        <div class="resource-card youtube">
+            <div class="card-header">YouTube Video</div>
+            <div class="card-body">
+                <div class="card-title">Breathing System in Arabic</div>
+                <a href="https://www.youtube.com/watch?v=nu5NM07wIMU" class="card-link" target="_blank">Watch Video</a>
+            </div>
+        </div>
+
+        <div class="resource-card youtube">
+            <div class="card-header">YouTube Video</div>
+            <div class="card-body">
+                <div class="card-title">Vaporizors in Arabic</div>
+                <a href="https://www.youtube.com/watch?v=uXh6Ov2Q7kk" class="card-link" target="_blank">Watch Video</a>
+            </div>
+        </div>
+        
+        <div class="resource-card youtube">
+            <div class="card-header">YouTube Channel</div>
+            <div class="card-body">
+                <div class="card-title">Hassan Anesthesia Channel</div>
+                <a href="https://www.youtube.com/@hassan_anesthesia" class="card-link" target="_blank">Visit Channel</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="resource-card featured">
+        <div class="card-header">HIGHLY RECOMMENDED CHANNEL</div>
+        <div class="card-body">
+            <div class="card-title">Dr. Yasser Qadah's Anesthesia Channel</div>
+            <div class="card-description">The Whole Channel of Dr. Yasser Qadah is very highly recommended for
+                all medical instrumentation.</div>
+            <a href="https://www.youtube.com/@BiomedicalEngineering" class="card-link" target="_blank">Visit
+                Channel</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Curated collection of anesthesia equipment resources for biomedical engnieering students</p>
+    </div>
+</body>
+
+</html>
